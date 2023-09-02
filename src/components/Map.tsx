@@ -26,6 +26,10 @@ const Map: React.FC<MapProps> = ({ countries }) => {
       zoom={zoom}
       scrollWheelZoom={true}
     >
+       <TileLayer
+       
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
      
       {countries.map((country) => (
         <Marker
